@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nirav Surabhi</title>
+<meta name="description" content="Things Nirav Surabhi builds.">
+<link rel="icon" href="favicon.png" type="image/png">
+<style>
+  :root { color-scheme: light dark; --bg: #f4f4f8; --ink: #16161c; --ink-2: #55555f; --accent: #6a4ee6; --card: rgba(255,255,255,.62); --rim: rgba(255,255,255,.85); }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d0d13; --ink: #f2f2f6; --ink-2: #b0b0bc; --accent: #9b83ff; --card: rgba(255,255,255,.055); --rim: rgba(255,255,255,.16); }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; background: var(--bg); color: var(--ink);
+    font: 400 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+    letter-spacing: -0.011em;
+    display: grid; place-items: center; padding: 32px;
+  }
+  .aurora { position: fixed; inset: 0; z-index: -1; overflow: hidden; }
+  .aurora span { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .45; }
+  .aurora span:nth-child(1) { width: 46vw; height: 46vw; left: -12vw; top: -14vw; background: #6a4ee6; }
+  .aurora span:nth-child(2) { width: 38vw; height: 38vw; right: -10vw; bottom: -8vw; background: #e64e93; opacity: .32; }
+  main { max-width: 520px; width: 100%; }
+  h1 { font-size: 2rem; letter-spacing: -0.03em; margin: 0 0 6px; font-weight: 700; }
+  .sub { color: var(--ink-2); margin: 0 0 30px; }
+  a.project {
+    display: flex; align-items: center; gap: 15px; text-decoration: none; color: inherit;
+    background: var(--card); border: 1px solid var(--rim); border-radius: 17px; padding: 18px 20px;
+    backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+    transition: transform .16s ease;
+  }
+  a.project:hover { transform: translateY(-2px); }
+  a.project img { width: 52px; height: 52px; border-radius: 13px; flex: none; }
+  a.project h2 { margin: 0 0 3px; font-size: 1.02rem; font-weight: 620; letter-spacing: -0.012em; }
+  a.project p { margin: 0; color: var(--ink-2); font-size: .89rem; line-height: 1.5; }
+  footer { margin-top: 26px; font-size: .84rem; color: var(--ink-2); }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="aurora"><span></span><span></span></div>
+<main>
+  <h1>Nirav Surabhi</h1>
+  <p class="sub">Things I build for the Mac.</p>
+  <a class="project" href="/deadlinefloat/">
+    <img src="/deadlinefloat/icon.png" alt="">
+    <span>
+      <h2>DeadlineFloat</h2>
+      <p>A bar down the edge of your screen for the Google Calendar deadlines you actually have to do something about.</p>
+    </span>
+  </a>
+  <footer><a href="mailto:niravsurabhi@gmail.com">niravsurabhi@gmail.com</a></footer>
+</main>
+</body>
+</html>
